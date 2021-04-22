@@ -258,6 +258,10 @@ button:hover {
      grid-column: span 3;
    }
 
+   .art2-grid-container > div {
+     grid-column: span 4;
+   }
+
    .page-title {
      font-size: 1.5em;
      position: absolute;

@@ -98,6 +98,72 @@ border-style: solid;
   border-radius: 15pt;
 }
 
+.connect-grid {
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: 30% auto auto;
+grid-gap: 10px;
+background-color: white;
+padding: 10px;
+border-color: black;
+border-width: medium;
+border-style: none;
+}
+
+.connect-grid > div {
+  text-align: center;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 2.3em;
+  padding: 5px;
+}
+
+.socials {
+  font-size: 2.0em;
+  padding: 30px;
+}
+
+.about-grid-container {
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+grid-gap: 20px;
+background-color: white;
+padding: 10px;
+border-color: black;
+border-width: medium;
+border-style: solid;
+
+}
+
+.about-grid-container > div {
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column: span 5;
+  border-radius: 15pt;
+}
+
+.portrait {
+  background-image: url("abc.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 40vh;
+}
+
+.about-text {
+  background-color: #D9FAFF;
+  font-size: 1.3em;
+}
+
 .art-grid-container {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, auto-fit, minmax(90px, 1fr)); */
@@ -298,6 +364,14 @@ button:hover {
 
 /* larger screen size */
 @media (min-width: 1150px) {
+
+  /* body {
+    background-color: black;
+  } */
+
+  .portrait {
+    min-height: 60vh;
+  }
   /* html {
         font-size: 1vw;
        }
